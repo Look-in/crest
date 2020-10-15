@@ -1,0 +1,12 @@
+<div class="mat-drawer-container">
+  <mat-card class="camera-card">
+    <mat-card-header>
+      <div mat-card-avatar class="header-image" [style.background-image]="getActiveIcon()"></div>
+      <mat-card-title>{{camera?.name}}</mat-card-title>
+      <mat-card-subtitle>{{(camera.active ? 'camera.active' : 'camera.inactive') | translate}}</mat-card-subtitle>
+    </mat-card-header>
+    <div class="camera-img">
+      <img mat-card-image [src]="camera.scr">
+    </div>
+  </mat-card>
+</div>

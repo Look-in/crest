@@ -1,0 +1,12 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <span class="spacer"></span>
+    <app-menu></app-menu>
+    <span class="user-spacer"></span>
+    <span class="user-spacer user-name">{{loginService.user?.name}}</span>
+    <button mat-icon-button aria-label="logout" *ngIf="loginService.user" (click)="logout()">
+      <mat-icon>logout</mat-icon>
+    </button>
+  </mat-toolbar-row>
+</mat-toolbar>
+

@@ -1,0 +1,12 @@
+<button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Menu">
+  <mat-icon svgIcon="logo"></mat-icon>
+</button>
+<mat-menu #menu="matMenu">
+  <button mat-menu-item
+          *ngFor="let item of menuItems"
+          (click)="clickMenuItem(item)">
+    <mat-icon>{{ item.menuIcon }}</mat-icon>
+    <span [translate]="item.menuLinkText"></span>
+  </button>
+</mat-menu>
+<span class="selected-menu" [translate]="selectedMenu"></span>

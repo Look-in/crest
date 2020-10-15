@@ -1,0 +1,11 @@
+<div class="mat-drawer-container">
+  <cdk-virtual-scroll-viewport itemSize="100" class="content">
+    <div class="content" fxLayout="row wrap" fxLayoutGap="16px grid">
+      <div fxFlex="25%" fxFlex.xs="100%" fxFlex.sm="33%" *cdkVirtualFor="let camera of cameras">
+        <div class="camera-block">
+          <app-camera-template [camera]="camera"></app-camera-template>
+        </div>
+      </div>
+    </div>
+  </cdk-virtual-scroll-viewport>
+</div>

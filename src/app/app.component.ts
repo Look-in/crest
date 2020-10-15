@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { LanguageService } from './services/language.service';
+import { ThemeService } from './services/theme.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'Crest';
+
+  constructor(private languageService: LanguageService,
+              private themeService: ThemeService) {
+    languageService.setLanguage();
+    themeService.setTheme();
+  }
+
 }

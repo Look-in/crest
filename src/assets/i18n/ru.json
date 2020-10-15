@@ -1,0 +1,25 @@
+{
+  "menu": {
+    "cameras": "Камеры",
+    "reports": "Отчетность",
+    "settings": "Настройки"
+  },
+  "settings": {
+    "language": "Язык",
+    "theme": "Тема"
+  },
+  "login": {
+    "header": "Вход в систему",
+    "username": "Имя пользователя",
+    "password": "Пароль",
+    "required": "Обязательное",
+    "button": "Продолжить"
+  },
+  "camera": {
+    "active": "Активна",
+    "inactive": "Неактивна"
+  },
+  "report": {
+    "header": "Отчеты"
+  }
+}

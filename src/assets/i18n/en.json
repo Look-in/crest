@@ -1,0 +1,25 @@
+{
+  "menu": {
+    "cameras": "Cameras",
+    "reports": "Reporting",
+    "settings": "Settings"
+  },
+  "settings": {
+    "language": "Language",
+    "theme": "Theme"
+  },
+  "login": {
+    "header": "Login",
+    "username": "Username",
+    "password": "Password",
+    "required": "Required",
+    "button": "Continue"
+  },
+  "camera": {
+    "active": "Active",
+    "inactive": "Inactive"
+  },
+  "report": {
+    "header": "Report"
+  }
+}
